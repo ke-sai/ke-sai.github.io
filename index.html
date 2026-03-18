@@ -10,40 +10,39 @@
             padding: 0;
             background-color: #000000; /* Pure Black */
             display: flex; 
-            flex-direction: column; /* Stacks logo and text vertically */
+            flex-direction: column; 
             justify-content: center; 
             align-items: center; 
             min-height: 100vh; 
             overflow: hidden;
-            /* Modern, clean system fonts */
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         }
 
         .logo {
             display: block;
             height: auto;
-            width: 50%; /* 50% width on desktop */
-            margin-bottom: 30px; /* Space between logo and text */
+            width: 50%; /* Desktop width */
+            margin-bottom: 40px; /* Increased spacing */
         }
 
         .tagline {
-            color: #aaaaaa; /* Clean light grey */
-            font-weight: 300;
-            font-size: 1.2rem;
-            letter-spacing: 0.15rem; /* Spacious, modern feel */
-            text-transform: uppercase;
+            color: #dcdcdc; /* Brighter, cleaner light grey */
+            font-weight: 600; /* Much thicker/bolder */
+            font-size: 1.8rem; /* Significantly larger */
+            letter-spacing: 0.05rem; /* Tighter for better impact at larger sizes */
             text-align: center;
-            max-width: 90%;
+            max-width: 85%;
+            line-height: 1.2;
         }
 
         /* Mobile Adjustments */
         @media (max-width: 768px) {
             .logo {
-                width: 80%; /* 80% width on mobile */
+                width: 80%; 
             }
             .tagline {
-                font-size: 0.85rem;
-                letter-spacing: 0.1rem;
+                font-size: 1.2rem; /* Scaled down but still readable on mobile */
+                font-weight: 600;
             }
         }
     </style>
